@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="XHj-Ne-USH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mail SMTP Example-->
+        <scene sceneID="sAj-lo-uyK">
+            <objects>
+                <tableViewController id="82A-LV-SeS" customClass="MailSMTPVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4iJ-zh-b13">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="JHi-gc-0i8">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FJ3-Cc-eDJ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FJ3-Cc-eDJ" id="XgG-0q-uvU">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8l-gN-OEa">
+                                                    <rect key="frame" x="16" y="13" width="64" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="64" id="xIz-QZ-1Io"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Gp-Rq-QZr">
+                                                    <rect key="frame" x="88" y="13.5" width="224" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3Gp-Rq-QZr" firstAttribute="leading" secondItem="l8l-gN-OEa" secondAttribute="trailing" constant="8" id="2nI-Na-Joz"/>
+                                                <constraint firstItem="l8l-gN-OEa" firstAttribute="leading" secondItem="XgG-0q-uvU" secondAttribute="leadingMargin" constant="8" id="3av-iD-r67"/>
+                                                <constraint firstAttribute="centerY" secondItem="l8l-gN-OEa" secondAttribute="centerY" id="YIH-8X-eJS"/>
+                                                <constraint firstAttribute="centerY" secondItem="3Gp-Rq-QZr" secondAttribute="centerY" id="v58-oa-tjM"/>
+                                                <constraint firstAttribute="trailing" secondItem="3Gp-Rq-QZr" secondAttribute="trailing" constant="8" id="y3U-CI-0wI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="E6L-mw-uPh">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E6L-mw-uPh" id="YOn-zx-gzJ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LM6-eM-lWr">
+                                                    <rect key="frame" x="16" y="13" width="64" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="64" id="ikY-qI-MNM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test Mail SMTP" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmM-VC-aq1">
+                                                    <rect key="frame" x="88" y="13.5" width="224" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="LM6-eM-lWr" secondAttribute="centerY" id="3yS-rr-VUY"/>
+                                                <constraint firstAttribute="centerY" secondItem="gmM-VC-aq1" secondAttribute="centerY" id="FFr-P6-GRo"/>
+                                                <constraint firstItem="LM6-eM-lWr" firstAttribute="leading" secondItem="YOn-zx-gzJ" secondAttribute="leadingMargin" constant="8" id="LCp-3S-0rS"/>
+                                                <constraint firstAttribute="trailing" secondItem="gmM-VC-aq1" secondAttribute="trailing" constant="8" id="f9D-WD-EpM"/>
+                                                <constraint firstItem="gmM-VC-aq1" firstAttribute="leading" secondItem="LM6-eM-lWr" secondAttribute="trailing" constant="8" id="rwU-06-azh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="600" id="HBw-9w-EpT">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HBw-9w-EpT" id="JHp-x2-yeT">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Send from my iPhone" translatesAutoresizingMaskIntoConstraints="NO" id="fzY-Bi-Xq5">
+                                                    <rect key="frame" x="8" y="8" width="304" height="583.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fzY-Bi-Xq5" firstAttribute="leading" secondItem="JHp-x2-yeT" secondAttribute="leading" constant="8" id="2dB-0R-qa0"/>
+                                                <constraint firstAttribute="bottom" secondItem="fzY-Bi-Xq5" secondAttribute="bottom" constant="8" id="CJU-Jr-Hbj"/>
+                                                <constraint firstAttribute="trailing" secondItem="fzY-Bi-Xq5" secondAttribute="trailing" constant="8" id="MGg-1O-dAc"/>
+                                                <constraint firstItem="fzY-Bi-Xq5" firstAttribute="top" secondItem="JHp-x2-yeT" secondAttribute="top" constant="8" id="tSy-0S-cps"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="82A-LV-SeS" id="dw1-3N-FT0"/>
+                            <outlet property="delegate" destination="82A-LV-SeS" id="ak5-oW-szY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Mail SMTP Example" id="d2E-mb-Ow7">
+                        <barButtonItem key="rightBarButtonItem" image="ic_email.png" id="bjj-pt-gHx">
+                            <connections>
+                                <action selector="onClickSendSMTP:" destination="82A-LV-SeS" id="BFk-S2-q7Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="fzY-Bi-Xq5" id="6lA-rB-90M"/>
+                        <outlet property="subjectTextField" destination="gmM-VC-aq1" id="IX7-wp-Las"/>
+                        <outlet property="toTextField" destination="3Gp-Rq-QZr" id="9p6-y7-Z3H"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CqI-WR-Xg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1594" y="317"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Izs-Ex-LgR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XHj-Ne-USH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aOh-fY-GUE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="82A-LV-SeS" kind="relationship" relationship="rootViewController" id="HjC-O8-Nm1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dK4-Oo-Ko8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="317"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_email.png" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

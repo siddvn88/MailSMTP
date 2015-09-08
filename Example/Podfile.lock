@@ -1,0 +1,14 @@
+PODS:
+  - MailSMTP (0.0.1)
+
+DEPENDENCIES:
+  - MailSMTP (from `../`)
+
+EXTERNAL SOURCES:
+  MailSMTP:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MailSMTP: c6b2b585145c794c75c1e0b858edbe4d3bb3b9a8
+
+COCOAPODS: 0.39.0.beta.4
