@@ -28,9 +28,6 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
-
-
 @interface NSData (Base64Additions)
 
 +(id)decodeBase64ForString:(NSString *)decodeString;
