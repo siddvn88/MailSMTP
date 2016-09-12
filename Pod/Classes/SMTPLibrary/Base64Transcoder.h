@@ -26,8 +26,6 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#include <UIKit/UIKit.h>
-
 extern size_t EstimateBas64EncodedDataSize(size_t inDataSize);
 extern size_t EstimateBas64DecodedDataSize(size_t inDataSize);
 
