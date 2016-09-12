@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Si Do Dinh. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <CFNetwork/CFNetwork.h>
 #import "SKPSMTPMessage.h"
 
