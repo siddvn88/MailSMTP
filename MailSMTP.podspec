@@ -8,7 +8,7 @@ s.license          = 'MIT'
 s.author           = { "Si Do Dinh" => "sidd.vn88@gmail.com" }
 s.source           = { :git => "https://github.com/siddvn88/MailSMTP.git", :tag => "#{s.version}" }
 
-s.platform     = :ios, '8.0'
+s.platforms = { :ios => '8.0', :osx => '10.7' }
 s.requires_arc = true
 
 s.source_files = 'Pod/Classes/**/*'
